@@ -23,7 +23,7 @@ jobs:
       env:
         NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore Hello-world/hello-world.sln
     - name: Build
       run: dotnet build --no-restore
     - name: Test

@@ -30,8 +30,8 @@ jobs:
       run: dotnet test Hello-world/hello-world.sln --no-build --verbosity normal
     - name: Create the package
       run: dotnet pack --configuration Release Hello-world/hello-world.sln
-    - name: Artifacts
-      run: publish
+    #- name: Artifacts
+    #  run: publish
     - name: Upload artifacts
       uses: actions/upload-artifact@v2
       with:
